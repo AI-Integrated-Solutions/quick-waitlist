@@ -5,7 +5,7 @@ import EmailForm from "@/components/EmailForm";
 export default function Home() {
   const siteLogo =
     process.env.NEXT_PUBLIC_LOGO ||
-    "https://res.cloudinary.com/dyv1yduua/image/upload/v1733392810/speaker_oiuezn.svg";
+    "";
   // Data from env
   const features =
     process.env.NEXT_PUBLIC_FEATURES ||
@@ -16,6 +16,7 @@ export default function Home() {
   const title =
     process.env.NEXT_PUBLIC_TITLE ||
     "Join the waitlist for the SAAS code library.";
+    
   const description =
     process.env.NEXT_PUBLIC_OFFER_TITLE || "Add offer title from env";
 
@@ -25,7 +26,7 @@ export default function Home() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={siteLogo}
-        alt="logo"
+        alt=""
         className="w-auto h-25 mx-auto object-contain mb-5"
       />
       <Card>

@@ -28,6 +28,7 @@ const EmailForm = ({ date, title }: { date: string; title: string }) => {
     return Math.max(0, diffDays);
   }
 
+
   const handleSubmit = async (event: React.SyntheticEvent) => {
     event.preventDefault();
     const target = event.target as HTMLFormElement;
@@ -69,7 +70,7 @@ const EmailForm = ({ date, title }: { date: string; title: string }) => {
         {/* <div className="text-orange-500 font-medium">Limited Time Offer</div> */}
         <span className="text-green-600 bg-green-100 px-2 py-1 rounded text-sm items-center flex gap-1 w-fit">
           <Hourglass size={14} strokeWidth={2} aria-hidden="true" />
-          {getDaysLeft()} days left
+          {getDaysLeft()} days left Until our Official Launch
         </span>
         <h1 className="md:text-4xl text-3xl leading-tight font-semibold">
           {title}
